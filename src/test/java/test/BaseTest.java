@@ -8,7 +8,8 @@ import org.testng.annotations.BeforeTest;
 public class BaseTest {
 	
 	public static WebDriver driver;
-	String url = "https://www.fb.com";//from dev2
+
+	String url = "https://www.fb.com";//from dev1 & from dev2
 	
 	@BeforeTest
 	public void setup() {
