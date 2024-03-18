@@ -14,7 +14,10 @@ public class BaseTest {
 	@BeforeTest
 	public void setup() {
 		//open the browser here
-		driver = new ChromeDriver();//opens the chrome browser
+
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
+		driver = new ChromeDriver(options);//opens the chrome browser
 		
 		//open the url
 		driver.get(url);
